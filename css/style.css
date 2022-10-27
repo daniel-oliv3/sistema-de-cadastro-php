@@ -1,23 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
 
 
-* { 
+body {
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    transition: all .2s linear;
+    background-image: linear-gradient(45deg, cyan, yellow);
 }
 
+.tela-login {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px;
+    border-radius: 15px;
+    color: #fff;
+}
 
+input {
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
 
+button {
+    background-color: dodgerblue;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
 
-
-
-
+button:hover {
+    background-color: deepskyblue;
+}
 
 
 
