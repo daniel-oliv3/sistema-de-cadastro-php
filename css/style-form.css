@@ -3,7 +3,66 @@
 
 body {
     font-family: 'Montserrat', sans-serif;  
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
 }
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    width: 25%;
+}
+
+fieldset {
+    border: 3px solid dodgerblue;
+}
+
+legend {
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
