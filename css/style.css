@@ -24,7 +24,7 @@ input {
     font-size: 15px;
 }
 
-button {
+.btn {
     background-color: dodgerblue;
     border: none;
     padding: 15px;
