@@ -15,8 +15,8 @@
 <h2>Jogos Ao Vivo Todos os dias!!</h2>
 
 <div class="box">
-	<a href="">Login</a>
-	<a href="">Cadastre-se</a>
+	<a href="login.php">Login</a>
+	<a href="formulario.php">Cadastre-se</a>
 </div>
 
 
