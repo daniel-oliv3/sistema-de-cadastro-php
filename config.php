@@ -5,7 +5,7 @@
 $dbHost = "localhost";
 $dbUsername = "root";
 $dbPassword = "";
-$dbName = "sistema-de-cadastro-db";
+$dbName = "banco_dados-cadastro";
 
 $conexao = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
 

@@ -26,14 +26,14 @@
 		$nome = $_POST['nome'];
 		$email = $_POST['email'];
 		$telefone = $_POST['telefone'];
-		$genero = $_POST['genero'];
+		$sexo = $_POST['genero'];
+		$data_nascimento = $_POST['data_nascimento'];
 		$endereco = $_POST['endereco'];
 		$cidade = $_POST['cidade'];
 		$estado = $_POST['estado'];
 
-		$result = mysqli_query($conexao, "INSERT INTO usuarios(nome, email, telefone, sexo, data_nascimento, endereco, cidade, estado) 
-			VALUES ($nome, $email, $telefone, $sexo, $data_nascimento, $endereco, $cidade, $estado)");
-		
+		$result = mysqli_query($conexao, "INSERT INTO usuarios(nome, email, telefone, sexo, data_nascimento, endereco, cidade, estado) VALUES ('$nome', '$email', '$telefone', '$sexo', '$data_nascimento', '$endereco', '$cidade', '$estado')");
+
 	}
 
 ?>
@@ -61,7 +61,7 @@
 			</div>
 			<br/>
 			<div class="inputBox">
-				<input type="email" name="email" id="email" class="inputUser" required>
+				<input type="text" name="email" id="email" class="inputUser" required>
 				<label for="email" class="labelInput">Email</label>
 			</div>
 			<br/>
