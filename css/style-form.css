@@ -11,7 +11,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
     padding: 15px;
     border-radius: 15px;
@@ -61,12 +61,27 @@ legend {
 }
 
 #data_nascimento {
-    
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
 }
 
+#submit {
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    border-radius: 7px;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+}
 
-
-
+#submit:hover {
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+}
 
 
 
