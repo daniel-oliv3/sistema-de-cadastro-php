@@ -39,13 +39,30 @@ legend {
     border: none;
     border-bottom: 1px solid #fff;
     outline: none;
+    color: #fff;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
 }
 
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
 
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput {
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
 
-
-
-
+#data_nascimento {
+    
+}
 
 
 
