@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<!-- ======= / ======= -->
+<!-- ======= Home/Pagina home ======= -->
 <h1>Se inscreva no canal ;)</h1>
 <h2>Jogos Ao Vivo Todos os dias!!</h2>
 
