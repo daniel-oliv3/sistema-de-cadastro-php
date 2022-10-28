@@ -36,6 +36,7 @@ if($conexao->connect_errno){
 
 /*
 - http://localhost/sistema-de-cadastro-php/config.php
+- http://localhost/sistema-de-cadastro-php/formulario.php
 */
 
 

@@ -1,3 +1,27 @@
+<?php
+
+	if(isset($_POST['submit'])){
+		print_r('Nome: ' . $_POST['nome']);
+		print_r('<br>');
+		print_r('E-mail: ' . $_POST['email']);
+		print_r('<br>');
+		print_r('Telefone: ' . $_POST['telefone']);
+		print_r('<br>');
+
+		print_r('Sexo: ' . $_POST['genero']);
+		print_r('<br>');
+		print_r('Data de Nascimento: ' . $_POST['data_nascimento']);
+		print_r('<br>');
+
+		print_r('Endereço: ' . $_POST['endereco']);
+		print_r('<br>');
+		print_r('Cidade: ' . $_POST['cidade']);
+		print_r('<br>');
+		print_r('Estado: ' . $_POST['estado']);
+		print_r('<br>');
+	}
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,7 +36,7 @@
 
 <!-- Formulário de Usuário -->
 <div class="box">
-	<form action="">
+	<form action="formulario.php" method="POST">
 		<fieldset>
 			<legend><b>Formulário de Usuário</b></legend>
 			<br/><br/>
