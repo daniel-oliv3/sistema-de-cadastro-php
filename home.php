@@ -5,13 +5,19 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Home</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style-home.css">
 	<link rel="shortcut icon" href="img/favicon.ico"/>
 </head>
 <body>
 
-<!-- =======  ======= -->
+<!-- ======= / ======= -->
+<h1>Se inscreva no canal ;)</h1>
+<h2>Jogos Ao Vivo Todos os dias!!</h2>
 
+<div class="box">
+	<a href="">Login</a>
+	<a href="">Cadastre-se</a>
+</div>
 
 
 
