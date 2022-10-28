@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Login</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style-login.css">
 	<link rel="shortcut icon" href="img/favicon.ico"/>
 </head>
 <body>
@@ -15,11 +15,13 @@
 <a href="home.php">Voltar</a>
 <div class="tela-login">
 	<h1>Login</h1>
-	<input type="text" name="" id="" placeholder="Nome">
-	<br/><br/>
-	<input type="password" name="" id="" placeholder="Senha">
-	<br/><br/>
-	<button class="btn">Enviar</button>
+	<form action="testLogin.php" method="POST">		
+		<input type="text" name="email" id="email" placeholder="E-mail">
+		<br/><br/>
+		<input type="password" name="senha" id="senha" placeholder="Senha">
+		<br/><br/>
+		<button class="btn" name="submit" value="submit">Enviar</button>
+	</form>
 </div>
 
 
