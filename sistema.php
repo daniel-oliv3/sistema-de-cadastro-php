@@ -1,5 +1,6 @@
 <?php 
 session_start();
+include_once('config.php');
 //print_r($_SESSION);
 //Verifica se existe uma "sessão", valida.. mantei na pagina atual, se não tela de login
 if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)){
@@ -8,6 +9,12 @@ if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)
     header('Location: login.php');
 }
 $logado = $_SESSION['email'];
+
+//Listagem
+  $sql = "SELECT * FROM usuarios ORDER BY id DESC";
+  $result = $conexao->query($sql);
+  print_r($result);
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -34,11 +41,37 @@ $logado = $_SESSION['email'];
   </div>
 </nav>
 
-<!-- ======= body ======= -->
+<!-- ======= userLogin ======= -->
 <br>
 <?php
     echo "<h1>Bem vindo <u>$logado</u></h1>";
 ?>
+
+<!-- ======= Table ======= -->
+<div>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Senha</th>
+        <th scope="col">Telefone</th>
+        <th scope="col">Sexo</th>
+        <th scope="col">Data Nascimento</th>
+        <th scope="col">Endereço</th>
+        <th scope="col">Cidade</th>
+        <th scope="col">Estado</th>
+      </tr>
+    </thead>
+    <tbody>
+    
+    </tbody>
+  </table>
+</div>
+
+
+
+
 
 
 	<!-- JavaScript Bundle with Popper -->
