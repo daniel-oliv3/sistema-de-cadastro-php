@@ -5,3 +5,9 @@ body {
     font-family: 'Montserrat', sans-serif;  
     background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
 }
+
+
+h1 {
+    color: #fff;
+    text-align: center;
+}

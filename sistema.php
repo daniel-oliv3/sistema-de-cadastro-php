@@ -1,6 +1,6 @@
 <?php 
 session_start();
-print_r($_SESSION);
+//print_r($_SESSION);
 //Verifica se existe uma "sessão", valida.. mantei na pagina atual, se não tela de login
 if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)){
     unset($_SESSION['email']); //destroi os dados
@@ -23,13 +23,22 @@ $logado = $_SESSION['email'];
 </head>
 <body>
 
+<!-- ======= Navbar ======= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">  
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Sistema</a>
+    <span class="navbar-toggle-icon"></span>
+  </div>
+  <div class="d-flex">
+    <a href="sair.php" class="btn btn-danger me-5">Sair</a>
+  </div>
+</nav>
 
-<!-- ======= Sistema ======= -->
-
-
-<h1>Acessou o sistema</h1>
-
-
+<!-- ======= body ======= -->
+<br>
+<?php
+    echo "<h1>Bem vindo <u>$logado</u></h1>";
+?>
 
 
 	<!-- JavaScript Bundle with Popper -->
