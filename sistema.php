@@ -13,7 +13,7 @@ $logado = $_SESSION['email'];
 //Listagem
   $sql = "SELECT * FROM usuarios ORDER BY id DESC";
   $result = $conexao->query($sql);
-  print_r($result);
+  //print_r($result);
 
 ?>
 <!DOCTYPE html>
@@ -48,8 +48,8 @@ $logado = $_SESSION['email'];
 ?>
 
 <!-- ======= Table ======= -->
-<div>
-  <table class="table table-bordered">
+<div class="m-5">
+  <table class="table text-white fundo-tb table-bordered">
     <thead>
       <tr>
         <th scope="col">ID</th>
@@ -61,10 +61,27 @@ $logado = $_SESSION['email'];
         <th scope="col">Endereço</th>
         <th scope="col">Cidade</th>
         <th scope="col">Estado</th>
+        <th scope="col">Ações</th>
       </tr>
     </thead>
     <tbody>
-    
+      <?php
+
+        while($user_data = mysqli_fetch_assoc($result)){
+          echo "<tr>";
+          echo "<td>" .$user_data['id']."</td>";
+          echo "<td>" .$user_data['nome']."</td>";
+          echo "<td>" .$user_data['senha']."</td>";
+          echo "<td>" .$user_data['telefone']."</td>";
+          echo "<td>" .$user_data['sexo']."</td>";
+          echo "<td>" .$user_data['data_nascimento']."</td>";
+          echo "<td>" .$user_data['endereco']."</td>";
+          echo "<td>" .$user_data['cidade']."</td>";
+          echo "<td>" .$user_data['estado']."</td>";
+          echo "</tr>";
+        }
+      
+      ?>
     </tbody>
   </table>
 </div>

@@ -11,3 +11,8 @@ h1 {
     color: #fff;
     text-align: center;
 }
+
+.fundo-tb {
+   background: rgba(0, 0, 0, 0.6);
+   border-radius: 15px 15px 0 0; 
+}
