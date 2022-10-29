@@ -1,6 +1,7 @@
 <?php
 
-
+//inicia a sessão
+session_start();
 
 //print_r($_REQUEST);
 /* ======= Validação ======= */
@@ -24,9 +25,13 @@ if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])
     //verificar o numero de linhas(rows)existe no Db
     if(mysqli_num_rows($result) < 1){
         //print_r('Não existe!');
+        unset($_SESSION['email']); //destroi os dados
+        unset($_SESSION['senha']);
         header('Location: login.php');
     }else {
         //print_r('Existe!');
+        $_SESSION['email'] = $email;
+        $_SESSION['senha'] = $senha;
         header('Location: sistema.php');
     }
 
