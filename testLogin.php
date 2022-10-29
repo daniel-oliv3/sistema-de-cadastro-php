@@ -24,8 +24,10 @@ if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])
     //verificar o numero de linhas(rows)existe no Db
     if(mysqli_num_rows($result) < 1){
         //print_r('Não existe!');
+        header('Location: login.php');
     }else {
         //print_r('Existe!');
+        header('Location: sistema.php');
     }
 
 }else {
