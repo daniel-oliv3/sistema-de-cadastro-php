@@ -1,27 +1,16 @@
 <?php
 
-	if(isset($_POST['submit'])){
-		
-		/*print_r('Nome: ' . $_POST['nome']);
-		print_r('<br>');
-		print_r('E-mail: ' . $_POST['email']);
-		print_r('<br>');
-		print_r('Telefone: ' . $_POST['telefone']);
-		print_r('<br>');
-
-		print_r('Sexo: ' . $_POST['genero']);
-		print_r('<br>');
-		print_r('Data de Nascimento: ' . $_POST['data_nascimento']);
-		print_r('<br>');
-
-		print_r('Endereço: ' . $_POST['endereco']);
-		print_r('<br>');
-		print_r('Cidade: ' . $_POST['cidade']);
-		print_r('<br>');
-		print_r('Estado: ' . $_POST['estado']);
-		print_r('<br>');*/
+	if(!empty($_GET['id'])){
 
 		include_once('config.php');
+
+		$id = $_GET['id'];
+
+		$sqlSelect = "SELECT * FROM usuarios WHERE id=$id";
+
+		$result = $conexao->query($sqlSelect);
+
+		print_r($result);
 
 		$nome = $_POST['nome'];
 		$email = $_POST['email'];
@@ -33,9 +22,7 @@
 		$cidade = $_POST['cidade'];
 		$estado = $_POST['estado'];
 
-		$result = mysqli_query($conexao, "INSERT INTO usuarios(nome, email, senha, telefone, sexo, data_nascimento, endereco, cidade, estado) VALUES ('$nome', '$email', $senha, '$telefone', '$sexo', '$data_nascimento', '$endereco', '$cidade', '$estado')");
-
-		header('Location: login.php');
+	
 	}
 
 ?>
@@ -51,12 +38,12 @@
 </head>
 <body>
 
-<!-- Formulário de Usuário -->
-<a href="home.php">Voltar</a>
+<!-- Editar Formulário de Usuário -->
+<a href="sistema.php">Voltar</a>
 <div class="box">
 	<form action="formulario.php" method="POST">
 		<fieldset>
-			<legend><b>Formulário de Usuário</b></legend>
+			<legend><b>Editar Formulário</b></legend>
 			<br/><br/>
 			<div class="inputBox">
 				<input type="text" name="nome" id="nome" class="inputUser" required>
@@ -121,5 +108,5 @@
     Autor: Daniel Oliveira
     Email: danieloliveira.webmaster@gmail.com
     Manaus/Amazonas
-    27/10/2022
+    29/10/2022
 -->
