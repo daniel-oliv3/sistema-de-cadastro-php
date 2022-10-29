@@ -49,7 +49,7 @@ $logado = $_SESSION['email'];
 
 <!-- ======= Table ======= -->
 <div class="m-5">
-  <table class="table text-white fundo-tb table-bordered">
+  <table class="table text-white fundo-tb">
     <thead>
       <tr>
         <th scope="col">ID</th>
