@@ -35,6 +35,7 @@
 
 		$result = mysqli_query($conexao, "INSERT INTO usuarios(nome, email, senha, telefone, sexo, data_nascimento, endereco, cidade, estado) VALUES ('$nome', '$email', $senha, '$telefone', '$sexo', '$data_nascimento', '$endereco', '$cidade', '$estado')");
 
+		header('Location: login.php');
 	}
 
 ?>
