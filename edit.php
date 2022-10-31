@@ -16,7 +16,7 @@
 				$email = $user_data['email'];
 				$senha = $user_data['senha'];
 				$telefone = $user_data['telefone'];
-				$sexo = $user_data['sexo'];
+				$sexo = $user_data['sexo']; //genero
 				$data_nascimento = $user_data['data_nascimento'];
 				$endereco = $user_data['endereco'];
 				$cidade = $user_data['cidade'];
@@ -40,7 +40,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Edição de Formulário</title>
-	<link rel="stylesheet" href="css/style-form.css">
+	<link rel="stylesheet" href="css/style-form.edit.css">
 	<link rel="shortcut icon" href="img/favicon.ico"/>
 </head>
 <body>
@@ -48,7 +48,7 @@
 <!-- Editar Formulário de Usuário -->
 <a href="sistema.php">Voltar</a>
 <div class="box">
-	<form action="formulario.php" method="POST">
+	<form action="saveEdit.php" method="POST">
 		<fieldset>
 			<legend><b>Editar Formulário</b></legend>
 			<br/><br/>
@@ -63,7 +63,7 @@
 			</div>
 			<br/>
 			<div class="inputBox">
-				<input type="password" name="senha" id="senha" class="inputUser" value="<?php echo $senha ?>" required>
+				<input type="text" name="senha" id="senha" class="inputUser" value="<?php echo $senha ?>" required>
 				<label for="senha" class="labelInput">Senha</label>
 			</div>
 			<br/>
@@ -97,7 +97,8 @@
 				<label for="estado" class="labelInput">Estado</label>
 			</div>
 			<br/>
-			<input type="submit" name="submit" id="submit">
+			<input type="hidden" name="id" value="<?php echo $id ?>">
+			<input type="submit" name="update" id="update">
 		</fieldset>
 	</form>
 </div>

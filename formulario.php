@@ -27,7 +27,7 @@
 		$email = $_POST['email'];
 		$senha = $_POST['senha'];
 		$telefone = $_POST['telefone'];
-		$sexo = $_POST['genero'];
+		$sexo = $_POST['sexo'];
 		$data_nascimento = $_POST['data_nascimento'];
 		$endereco = $_POST['endereco'];
 		$cidade = $_POST['cidade'];
@@ -78,9 +78,9 @@
 				<label for="telefone" class="labelInput">Telefone</label>
 			</div>
 			<p>Sexo:</p>
-			<input type="radio" id="feminino" name="genero" value="feminino" required>
+			<input type="radio" id="feminino" name="sexo" value="feminino" required>
 			<label for="feminino">Feminino</label>
-			<input type="radio" id="masculino" name="genero" value="masculino" required>
+			<input type="radio" id="masculino" name="sexo" value="masculino" required>
 			<label for="masculino">Masculino</label>
 			<br/><br/>
 			<!--======= Data de Nascimento ======= -->
