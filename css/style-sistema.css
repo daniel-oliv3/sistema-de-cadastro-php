@@ -16,3 +16,9 @@ h1 {
    background: rgba(0, 0, 0, 0.6);
    border-radius: 15px 15px 0 0; 
 }
+
+.box-search {
+    display: flex;
+    justify-content: center;
+    gap: .1%;
+}
