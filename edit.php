@@ -25,11 +25,10 @@
 			//print_r($nome);						
 		}else {
 			header('Location: sistema.php'); //not exist
-		}
-
-		
-
-	
+		}	
+	}
+	else {
+		header('Location: sistema.php'); //not exist
 	}
 
 ?>
